@@ -30,9 +30,9 @@ public class ReqresTests {
                 .then()
                 .statusCode(200)
                 .log().all()
-                .body("total", is(Integer.valueOf(12)))
-                .body("total_pages", is(Integer.valueOf(2)))
-                .body("page", is(Integer.valueOf(1)));
+                .body("total", is(12))
+                .body("total_pages", is(2))
+                .body("page", is(1));
 
     }
 
